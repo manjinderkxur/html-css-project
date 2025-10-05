@@ -1,0 +1,165 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>My Webpage about Dogs</title>
+    <meta name="description" content="My Dogs webpage with image and video">
+    <meta name="keywords" content="html, dogs">
+    <meta name="author" content="Manjinder Kaur ">
+	
+    <!-- Link to external CSS stylesheet -->
+    <link rel="stylesheet" href="css/assignment3.css">
+
+</head>
+
+<body>
+    <!-- The header is used for introductory content and site-wide navigation -->
+    <header>
+        <!-- The video provides multimedia content that visually introduces the topic -->
+        <video width="1280" height="720" controls>
+            <source src="video/dog-4740.mp4" type="video/mp4">
+        </video>
+
+        <!-- Navigation provides quick internal links to different dog articles -->
+        <nav>
+            <a href="#labs">Labs</a>
+            <a href="#border-collies">Border Collies</a>
+            <a href="#pugs">Pugs</a>
+            <a href="#pit">Pit Bull</a>
+        </nav>
+    </header>
+
+    <!-- This div groups the introductory content for better page organization -->
+    <div id="introduction">
+        <h1>Dogs are the Best</h1>
+        <h2>“What are some common characteristics of dogs and the roles they play in human society?”</h2>
+        <p>Dogs have been bred for desired behaviors, sensory capabilities, and physical attributes. Dog breeds vary
+            widely in shape, size, and color. They have the same number of bones (with the exception of the tail),
+            powerful jaws that house around 42 teeth, and well-developed senses of smell, hearing, and sight. Compared
+            to humans, dogs possess a superior sense of smell and hearing, but inferior visual acuity. Dogs perform
+            many roles for humans, such as hunting, herding, pulling loads, protection, companionship, therapy, aiding
+            disabled people, and assisting police and the military.</p>
+    </div>
+
+    <!-- The form allows users to sign up for newsletters and is semantically correct with appropriate input types -->
+    <div>
+        <h3>Sign up for our newsletter</h3>
+        <form action="#">
+            <p><label for="fname">First Name </label>
+                <input type="text" id="fname" name="firstname" placeholder="Your name..">
+            </p>
+            <p><label for="lname">Last Name </label>
+                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+            </p>
+            <p><label for="emailadd">Email </label>
+                <input type="email" id="emailadd" name="mail" placeholder="Email address" required>
+            </p>
+
+            <p>
+                <!-- Checkboxes allow users to select specific newsletters they’re interested in -->
+                <label><input type="checkbox" name="lab"> Lab Newsletter</label><br>
+                <label><input type="checkbox" name="border"> Border Collie Newsletter</label><br>
+                <label><input type="checkbox" name="pug"> Pug Newsletter</label><br>
+                <label><input type="checkbox" name="pit"> Pit Bull Newsletter</label><br>
+            </p>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+   <!-- Table showing average lifespan by breed -->
+    <div class="dog-table">
+        <h3>Average Dog Breed Lifespan</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Breed</th>
+                    <th>Average Lifespan (Years)</th>
+                    <th>Size Category</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Labrador Retriever</td>
+                    <td>12</td>
+                    <td>Large</td>
+                </tr>
+                <tr>
+                    <td>Border Collie</td>
+                    <td>13</td>
+                    <td>Medium</td>
+                </tr>
+                <tr>
+                    <td>Pug</td>
+                    <td>12</td>
+                    <td>Small</td>
+                </tr>
+                <tr>
+                    <td>Pit Bull</td>
+                    <td>11</td>
+                    <td>Medium-Large</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Section groups all dog articles to keep related content organized -->
+    <section> 
+        <h2>Our Articles</h2>
+    </section>
+	   <section id="articleSection">
+        <!-- Each article describes a specific dog breed and stands alone as independent content -->
+        <article id="labs">
+            <h3>Labs</h3>
+            <p>Labrador Retrievers are friendly, intelligent, and highly trainable dogs known for their gentle nature.
+                They are often used as family pets, guide dogs, and in search-and-rescue work.</p>
+            <!-- Figure pairs the image with a caption to describe it -->
+            <figure>
+                <img src="img/dogs-65867_small.jpg" alt="Labs" width="350" height="160">
+                <figcaption>Labs</figcaption>
+            </figure>
+        </article>
+
+        <article id="border-collies">
+            <h3>Border Collie</h3>
+            <p>Border Collies are energetic, intelligent, and hardworking dogs bred for herding livestock. They are
+                widely recognized as one of the most trainable and agile dog breeds.</p>
+            <figure>
+                <img src="img/dogs-1694838_small.jpg" alt="Border Collies" width="350" height="160">
+                <figcaption>Border Collie</figcaption>
+            </figure>
+        </article>
+
+        <article id="pugs">
+            <h3>Pugs</h3>
+            <p>Pugs are small, playful, and affectionate dogs known for their wrinkled faces and curly tails. They make
+                great companion pets due to their friendly and loving nature.</p>
+            <figure>
+                <img src="img/dogs-374906_small.jpg" alt="Pugs" width="350" height="150">
+                <figcaption>Pug</figcaption>
+            </figure>
+        </article>
+
+        <!-- Pit Bull article included inside the section for consistent structure -->
+        <article id="pit">
+            <h3>Pit Bull</h3>
+            <p>Pit Bulls are strong, loyal, and energetic dogs known for their muscular build and courage. With proper
+                training and socialization, they can be affectionate and devoted family companions.</p>
+            <figure>
+                <img src="img/dogs-825949_small.jpg" alt="Pit Bull" width="350" height="150">
+                <figcaption>Pit Bull</figcaption>
+            </figure>
+        </article>
+    </section>
+
+    <!-- Footer provides author details and copyright information relevant to the entire page -->
+    <footer>
+        <p>Posted by: <cite>Manjinder Kaur</cite><br>
+            copyright &copy; 2025
+        </p>
+        <p><a href="mailto:manjinderkaur@ucalgary.ca" target="_blank">Contact the Author</a></p>
+    </footer>
+
+</body>
+</html>
+
